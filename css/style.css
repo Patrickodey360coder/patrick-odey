@@ -1,0 +1,84 @@
+/*root styling*/
+:root{
+    --paragraphs:#222222;
+    --links:#666666;
+    --buttons: #37A000;
+}
+
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities - Container */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+body{
+    font-family: ;
+    line-height:1.6 ;
+    color: ;
+    font-size: ;
+}
+
+h1, h2, h3, h4{
+    line-height: 1.3;
+}
+ul{
+    list-style: none;
+}
+
+.nav{
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-block: 0.3rem;
+}
+.nav .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nav .container .logo{
+    color: var(--buttons);
+}
+
+.nav .container .nav-links{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a{
+    margin: 0 .5rem;
+    text-decoration: none;
+    color: var(--links);
+}
+
+.section-1 .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-1 h1{
+    font-size: 3rem;
+}
+.section-1 h3{
+    font-size: 2rem;
+}
+.section-1 h4{
+    font-size: 1.5rem;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 0;
+}
