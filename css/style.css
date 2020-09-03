@@ -3,6 +3,7 @@
     --paragraphs:#222222;
     --links:#666666;
     --buttons: #37A000;
+    --overlay: rgba(0,0,0,0.7);
 }
 
 /* resets */
@@ -46,6 +47,15 @@ p{
     border: 0.5px solid var(--buttons);
 }
 
+ .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+}
+
 .btn:hover{
     background-color: #fff;
     color: var(--buttons);
@@ -61,6 +71,8 @@ h1, h2, h3, h4{
 ul{
     list-style: none;
 }
+
+/* navigation */
 
 .nav{
     font-size: 1.2rem;
@@ -147,7 +159,8 @@ ul{
 
 .skills p{
     margin: 0 0 16px;
-    color: var(--paragraphs)
+    color: var(--paragraphs);
+    font-size: 1.1rem;
 }
 
 .skills i{
@@ -176,3 +189,58 @@ ul{
     margin: 15px 0;
     font-size: 1.2rem;
 }
+
+.about p{
+    font-size: 1.1rem ;
+}
+
+/* contact */
+
+.contact{
+    margin: 10rem 0 3rem;
+    position: relative;
+    height: 500px;
+    background: url('/bg.jpg') no-repeat bottom center/cover;
+}
+
+.contact-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 860px;
+    color: #fff;
+}
+
+.contact h3{
+    font-size: 2rem;
+    color: #fff;
+    margin: 1em 0 0;
+    text-align: center;
+}
+
+/* form */
+.form-container{
+    border-radius: 5px;
+}
+
+input[type=text],input[type=email], textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    resize: none;
+    background: transparent;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    color: var(--links);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
