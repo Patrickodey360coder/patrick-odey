@@ -21,6 +21,11 @@
     padding: 0 2rem;
 }
 
+.heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 hr{
     color: var(--links);
 }
@@ -194,16 +199,16 @@ ul{
     font-size: 1.1rem ;
 }
 
-/* contact */
+/* hype */
 
-.contact{
+.hype{
     margin: 10rem 0 3rem;
     position: relative;
     height: 500px;
     background: url('/bg.jpg') no-repeat bottom center/cover;
 }
 
-.contact-inner{
+.hype-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,36 +216,76 @@ ul{
     margin: auto;
     max-width: 860px;
     color: #fff;
+    padding: 10rem 0 0rem ;
 }
 
-.contact h3{
+.hype h4{
     font-size: 2rem;
     color: #fff;
     margin: 1em 0 0;
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 2.5rem auto;
+}
+
+.hype p{
+    color: #fff;
+    font-size: 1.2rem ;
+    text-align: center;
+}
+
+/* contact */
+.contact{
+  margin: 2rem 0 2rem;
+}
+
+.contact .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container h4{
+  margin: 0px 0px 8px;
 }
 
 /* form */
-.form-container{
-    border-radius: 5px;
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0px;
 }
 
-input[type=text],input[type=email], textarea{
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    border-radius: 4px;
-    resize: none;
-    background: transparent;
-    border: 1px solid #ccc;
+.form-control {
+  display: block;
+  width: 80%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: 1.375rem .75rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  font-size: 1rem;
 }
 
-input[type=submit]{
-    color: var(--links);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.form-control::placeholder{
+  color: #495057;
 }
 
+
+.form textarea{
+  width: 80%;  
+  display: block;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  resize: none;
+} 
