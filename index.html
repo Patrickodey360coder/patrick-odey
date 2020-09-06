@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav animate__animated animate__bounceInDown">
         <div class="container">
             <h1 class="logo">Logo</h1>
             <ul class="nav-links">
@@ -25,13 +25,13 @@
     <!-- Intro  -->
     <section class="section-1">
         <div class="container">
-            <div class="intro">
+            <div class="intro  animate__animated animate__bounceInLeft">
                 <h4>Hi,</h4>
                 <h1>Iam Patrick Odey</h1>
                 <h3>Fullstack Web Developer</h3>
                 <input type="submit" class="btn" value="Hire me">
             </div>
-            <img src="2968383.jpg" alt="header image">
+            <img src="images/2968383.jpg" alt="header image" class="animate__animated animate__bounceInRight">
         </div>
     </section>
 
@@ -41,40 +41,40 @@
 
 
     <!-- Skills -->
-    <section class="skills">
-        <h3>Skills</h3>
+    <section class="skills ">
+        <h3 class="">Skills</h3>
         <div class="container">
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" >
                 <i class="fab fa-html5 fa-2x"></i>
                 <h4>HTML</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" >
                 <i class="fab fa-css3-alt fa-2x"></i>
                 <h4>CSS</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
                 <i class="fab fa-js fa-2x"></i>
                 <h4>JAVASCRIPT</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
                 <i class="fab fa-php fa-2x"></i>
                 <h4>PHP</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
                 <i class="fab fa-laravel fa-2x"></i>
                 <h4>LARAVEL</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div>
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
                 <i class="fas fa-database fa-2x"></i>
                 <h4>SQL</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
@@ -85,10 +85,10 @@
 
     <!-- About section -->
     <section class="about">
-        <h3>About</h3>
+        <h3 class="wow animate__animated animate__slideInUp" data-wow-duration="1s">About</h3>
         <div class="container">
-            <img src="6659.jpg" alt="">
-            <div>
+            <img src="images/6659.jpg" alt="" class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
                 <h4>Who is this guy?</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur voluptate excepturi est repellendus iusto impedit incidunt consequatur cumque dolorum, voluptatum in placeat enim autem, accusantium vitae quis ullam explicabo pariatur!</p><br>
 
@@ -98,7 +98,7 @@
     </section>
 
     <!-- hype with overlay-->
-    <section class="hype">
+    <section class="hype wow animate__animated animate__slideInUp" data-wow-duration="1s">
         <div class="overlay">
             <div class="hype-inner">
                 <p>I build accessible and scalable products</p>
@@ -110,9 +110,9 @@
     </section>
 
     <!-- Contact form  -->
-    <section class="contact">
+    <section class="contact" >
         <div class="container">
-			<div>
+			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
 				<h4 class="heading">Send a message</h4>
 				<p>start the conversation</p>
 				<form action="" method="post" class="form">
@@ -134,7 +134,7 @@
 				</form>
             </div>
             
-			<div>
+			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
 				<h4 class="heading">Get updates</h4>
                     <p>see what i'm up to</p>
                     <form action="" class="form-2">
@@ -161,11 +161,16 @@
     <div class="container">
         <hr>
     </div>
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__slideInUp" data-wow-duration="2s">
       <div class="container">
           <p>2020 Patrick Odey. All rights reserved</p>
       </div>  
     </footer>
+  
     
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
 </body>
 </html>

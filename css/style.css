@@ -204,7 +204,7 @@ ul{
     margin: 10rem 0 3rem;
     position: relative;
     height: 500px;
-    background: url('/bg.jpg') no-repeat bottom center/cover;
+    background: url('/images/bg.jpg') no-repeat bottom center/cover;
 }
 
 .hype-inner{
