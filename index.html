@@ -14,10 +14,10 @@
         <div class="container">
             <h1 class="logo">Logo</h1>
             <ul class="nav-links">
-                <li><a href="">about</a></li>
-                <li><a href="">skills</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -25,9 +25,9 @@
     <!-- Intro  -->
     <section class="section-1">
         <div class="container">
-            <div class="intro  animate__animated animate__bounceInLeft">
+            <div class="intro wow animate__animated animate__bounceInLeft">
                 <h4>Hi,</h4>
-                <h1>Iam Patrick Odey</h1>
+                <h1>I am Patrick Odey</h1>
                 <h3>Fullstack Web Developer</h3>
                 <input type="submit" class="btn" value="Hire me">
             </div>
@@ -41,54 +41,48 @@
 
 
     <!-- Skills -->
-    <section class="skills ">
-        <h3 class="">Skills</h3>
-        <div class="container">
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" >
+    <section class="skills wow animate__animated animate__slideInUp"  data-wow-duration="2s">
+        <h3 >Skills</h3>
+        <div class="container" style="place-items: center; text-align: center;">
+            <div>
                 <i class="fab fa-html5 fa-2x"></i>
                 <h4>HTML</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" >
+            <div>
                 <i class="fab fa-css3-alt fa-2x"></i>
                 <h4>CSS</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <div>
                 <i class="fab fa-js fa-2x"></i>
                 <h4>JAVASCRIPT</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <div>
                 <i class="fab fa-php fa-2x"></i>
                 <h4>PHP</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <div>
                 <i class="fab fa-laravel fa-2x"></i>
                 <h4>LARAVEL</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <div>
                 <i class="fas fa-database fa-2x"></i>
                 <h4>SQL</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, natus!</p>
             </div>
 
         </div>
     </section>
 
     <!-- About section -->
-    <section class="about">
-        <h3 class="wow animate__animated animate__slideInUp" data-wow-duration="1s">About</h3>
+    <section class="about wow animate__animated animate__slideInUp" data-wow-duration="2s">
+        <h3>About</h3>
         <div class="container">
-            <img src="images/6659.jpg" alt="" class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
-            <div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+            <img src="images/6659.jpg" alt="cartoon image">
+            <div>
                 <h4>Who is this guy?</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur voluptate excepturi est repellendus iusto impedit incidunt consequatur cumque dolorum, voluptatum in placeat enim autem, accusantium vitae quis ullam explicabo pariatur!</p><br>
 
@@ -98,7 +92,7 @@
     </section>
 
     <!-- hype with overlay-->
-    <section class="hype wow animate__animated animate__slideInUp" data-wow-duration="1s">
+    <section class="hype wow animate__animated animate__slideInUp" data-wow-duration="2s">
         <div class="overlay">
             <div class="hype-inner">
                 <p>I build accessible and scalable products</p>
@@ -112,7 +106,7 @@
     <!-- Contact form  -->
     <section class="contact" >
         <div class="container">
-			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+			<div class="wow animate__animated animate__slideInUp" data-wow-duration="2s">
 				<h4 class="heading">Send a message</h4>
 				<p>start the conversation</p>
 				<form action="" method="post" class="form">
@@ -125,7 +119,7 @@
                     </div>
                     
 					<div class="form-row">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+					<textarea class="" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
                     
                     <div class="form-row">
@@ -134,7 +128,7 @@
 				</form>
             </div>
             
-			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s">
+			<div class="wow animate__animated animate__slideInUp" data-wow-duration="2s">
 				<h4 class="heading">Get updates</h4>
                     <p>see what i'm up to</p>
                     <form action="" class="form-2">
@@ -146,11 +140,15 @@
                     </form>
                     <div class="phone-mail">
                         <div class="box">
-                            <div class="circle"></div>
+                            <div class="circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
                             <p>+234 - 903 - 2369 - 355</p>
                         </div>
                         <div class="box">
-                            <div class="circle"></div>
+                            <div class="circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
                             <p>patrickodey984@gmail.com</p>
                         </div>
                     </div>
@@ -158,11 +156,11 @@
 		</div>
     </section>
     <!-- Footer -->
-    <div class="container wow animate__animated animate__slideInUp" data-wow-duration="1s">
+    <div class="container">
         <hr>
     </div>
 
-    <footer class="footer wow animate__animated animate__slideInUp" data-wow-duration="1s">
+    <footer class="footer">
       <div class="container">
           <p>2020 Patrick Odey. All rights reserved</p>
       </div>  

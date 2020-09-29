@@ -110,6 +110,7 @@ ul{
 
 /*First section*/
 .section-1{
+    padding: 5em 0;
     margin: 3rem 0 5rem;
 }
 
@@ -142,7 +143,8 @@ ul{
 
 /*Second section skills*/
 .skills{
-    margin: 2rem 0 3rem;
+    margin: 3rem 0 3rem;
+    padding: 5rem 0;
 }
 .skills h3{
     text-align: center;
@@ -236,7 +238,7 @@ ul{
 
 /* contact */
 .contact{
-  margin: 2rem 0 2rem;
+  margin: 5rem 0 2rem;
 }
 
 .contact .container{
@@ -275,7 +277,8 @@ ul{
 }
 
 
-.form textarea{
+
+.form-row textarea{
   width: 80%;  
   display: block;
   padding: .375rem .75rem;
@@ -287,6 +290,7 @@ ul{
   border: 1px solid #ced4da;
   border-radius: 0;
   resize: none;
+  font-size: 1.3rem;
 } 
 
 .form-2 .form-control{
@@ -329,6 +333,8 @@ ul{
     background-color: var(--buttons);
     border-radius: 50%;
     margin-bottom: 10px;
+    display: grid;
+    place-items: center;
 }
 
 .footer{
@@ -340,14 +346,23 @@ ul{
     text-align: center;
 }
 
-hr {
+hr{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
+i{
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+}
+
 @media screen and (max-width:800px ){
+    image{
+        width: 100%;
+    }
 
     /* nav-links */
     .nav-links>li{
