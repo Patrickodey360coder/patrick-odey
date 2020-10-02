@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Utilities - Container */
@@ -29,12 +30,18 @@
 
 
 body{
+
     font-family: 'Catamaran', sans-serif;
-    line-height:1.6 ;
+    line-height: 1.6;
 }
 
 p{
     color: var(--links)
+}
+
+.logo a{
+    color: var(--buttons);
+    text-decoration: none;
 }
 
 .btn{
@@ -78,10 +85,16 @@ ul{
 /* navigation */
 
 .nav{
-    font-size: 1.2rem;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    font-size: 1.1rem;
     padding-top: 0.8rem;
     padding-block: 0.8rem;
     text-transform: capitalize;
+    background-color: #fff;
+    z-index: 10;
 }
 
 .nav .container{
@@ -95,7 +108,6 @@ ul{
 }
 
 .nav .container .nav-links{
-    justify-self: end;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,14 +155,15 @@ ul{
 
 /*Second section skills*/
 .skills{
-    margin: 3rem 0 3rem;
-    padding: 5rem 0;
+    margin: 2rem 0 3rem;
+    padding: 5rem 0 2rem;
 }
 .skills h3{
     text-align: center;
     font-size: 1.5rem;
-    margin: 3em 0;
+    margin: 1em 0 3em;
 }
+
 .skills .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,7 +189,8 @@ ul{
 /*About me section*/
 
 .about{
-    margin: 2rem 0 3rem; 
+    margin: 2rem 0 3rem;
+    padding: 4rem 0; 
 }
 
 .about h3{
@@ -239,6 +253,7 @@ ul{
 /* contact */
 .contact{
   margin: 5rem 0 2rem;
+  padding: 4rem 0 0rem;
 }
 
 .contact .container{
