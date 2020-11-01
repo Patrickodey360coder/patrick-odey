@@ -4,64 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     <title>Patrick Odey</title>
 </head>
 <body>
-    <nav class="nav animate__animated animate__bounceInDown">
-        <div class="container">
-            <h1 class="logo"><a href="#">Logo</a></h1>
-            <ul class="nav-links">
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Navbar</a>
+        <a class="navbar-brand" href="/">Patrick Odey</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
             </li>
+
         </ul>
         </div>
     </div>
     </nav>
 
     <!-- Intro  -->
-    <section class="section-1">
+    <!-- <section class="section-1">
         <div class="container">
             <div class="intro wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h4>Hi,</h4>
                 <h1>I am Patrick Odey</h1>
                 <h3>Fullstack Web Developer</h3>
-                <a href="#contact" class="btn" style="text-align: center; text-decoration: none;">Hire me</a>
+                <a href="#contact" class="button" style="text-align: center; text-decoration: none;">Hire me</a>
             </div>
             <img src="images/2968383.jpg" alt="header image" class="wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
         </div>
+    </section> -->
+
+    <!-- Intro  -->
+    <section class="section-1">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6   intro wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                            <h4>Hi,</h4>
+                            <h1>I am Patrick Odey</h1>
+                            <h3>Fullstack Web Developer</h3>
+                            <a href="#contact" class="button" style="text-align: center; text-decoration: none;">Hire me</a>
+                    </div>
+                    <div class="col-sm-6 d-none d-sm-block ">
+                        <img src="images/2968383.jpg" alt="header image" class="img-fluid wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <div class="container">
         <hr>
@@ -74,32 +84,32 @@
         <div class="container" style="place-items: center; text-align: center;">
             <div>
                 <i class="fab fa-html5 fa-2x"></i>
-                <h4>HTML</h4>
+                <h6>HTML</h6>
             </div>
 
             <div>
                 <i class="fab fa-css3-alt fa-2x"></i>
-                <h4>CSS</h4>
+                <h6>CSS</h6>
             </div>
 
             <div>
                 <i class="fab fa-js fa-2x"></i>
-                <h4>JAVASCRIPT</h4>
+                <h6>JAVASCRIPT</h6>
             </div>
 
             <div>
                 <i class="fab fa-php fa-2x"></i>
-                <h4>PHP</h4>
+                <h6>PHP</h6>
             </div>
 
             <div>
                 <i class="fab fa-laravel fa-2x"></i>
-                <h4>LARAVEL</h4>
+                <h6>LARAVEL</h6>
             </div>
 
             <div>
                 <i class="fas fa-database fa-2x"></i>
-                <h4>SQL</h4>
+                <h6>SQL</h6>
             </div>
 
         </div>
@@ -126,7 +136,7 @@
                 <p>I build accessible and scalable products</p>
                 <p> Want to bring your tech ideas to life? </p>
                 <h4>Say hello, lets create something great</h4>
-                <input class="btn" type="button" value="Get started">
+                <input class="button" type="button" value="Get started">
             </div>
         </div>
     </section>
@@ -139,11 +149,11 @@
 				<p>start the conversation</p>
 				<form action="" method="post" class="form">
 					<div class="form-row">
-					<input class="form-control" type="text" placeholder="Your name">
+					<input class="form-controler" type="text" placeholder="Your name">
                     </div>
                     
 					<div class="form-row">
-					<input class="form-control" type="text" placeholder="Email address">
+					<input class="form-controler" type="text" placeholder="Email address">
                     </div>
                     
 					<div class="form-row">
@@ -151,7 +161,7 @@
                     </div>
                     
                     <div class="form-row">
-                        <input type="button" class="btn" value="Send">
+                        <input type="button" class="button" value="Send">
                     </div>
 				</form>
             </div>
@@ -161,9 +171,9 @@
                     <p>see what i'm up to</p>
                     <form action="" class="form-2">
                         <div class="form-row">
-                            <input class="form-control" type="text" placeholder="Your name">
-                            <input class="form-control" type="email" placeholder="Email">
-                            <input class="btn" type="button" value="Get updates">
+                            <input class="form-controler" type="text" placeholder="Your name">
+                            <input class="form-controler" type="email" placeholder="Email">
+                            <input class="button" type="button" value="Get updates">
                         </div>
                     </form>
                     <div class="phone-mail">
@@ -195,7 +205,7 @@
     </footer>
   
     
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <script>new WOW().init();</script>
 

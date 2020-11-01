@@ -44,7 +44,7 @@ p{
     text-decoration: none;
 }
 
-.btn{
+.button{
     display: inline-block;
     background-color: var(--buttons);
     width: 8rem;
@@ -66,7 +66,7 @@ p{
     background: var(--overlay);
 }
 
-.btn:hover{
+.button:hover{
     background-color: #fff;
     color: var(--buttons);
 }
@@ -126,13 +126,13 @@ ul{
     margin: 3rem 0 5rem;
 }
 
-.section-1 .container{
+/* .section-1 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
-}
+} */
 
-.section-1 h1{
+/* .section-1 h1{
     font-size: 3rem;
 }
 .section-1 h3{
@@ -144,7 +144,7 @@ ul{
 .section-1 .container>img{
     width: 100%;
     height: 100%;
-}
+} */
 
 .intro{
     display: flex;
@@ -272,7 +272,7 @@ ul{
   margin: 8px 0px;
 }
 
-.form-control {
+.form-controler {
   display: block;
   width: 80%;
   height: calc(1.5em + .75rem + 2px);
@@ -287,7 +287,7 @@ ul{
   font-size: 1rem;
 }
 
-.form-control::placeholder{
+.form-controler::placeholder{
   color: var(--links);
 }
 
@@ -297,7 +297,7 @@ ul{
   width: 80%;  
   display: block;
   padding: .375rem .75rem;
-  font-weight: 400;
+  font-weight: lighter ;
   line-height: 1.5;
   color: var(--links);
   background-color: #fff;
@@ -305,10 +305,10 @@ ul{
   border: 1px solid #ced4da;
   border-radius: 0;
   resize: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 } 
 
-.form-2 .form-control{
+.form-2 .form-controler{
     display: block;
     width: 45%;
     height: calc(1.5em + .75rem + 2px);
@@ -439,7 +439,7 @@ i{
        row-gap: 1rem;
     }
 
-    .form-control, .form textarea{
+    .form-controler, .form textarea{
         width: 100%;
     }
 
@@ -447,7 +447,7 @@ i{
         margin-bottom: 2rem;
     }
 
-    .form-2 .form-control {
+    .form-2 .form-controler {
         display: flex;
         width: 100%;
         height: calc(1.5em + .75rem + 2px);
