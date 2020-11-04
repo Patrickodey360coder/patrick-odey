@@ -1,0 +1,77 @@
+/*root styling*/
+:root{
+    --paragraphs:#222222;
+    --links:#666666;
+    --buttons: #37A000;
+    --overlay: rgba(0,0,0,0.7);
+}
+
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+/* button */
+.button{
+    display: inline-block;
+    background-color: var(--buttons);
+    width: 8rem;
+    padding: 0.8rem 0;
+    border: none;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.5px solid var(--buttons);
+}
+
+/* centered columns */
+.col-centered{
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+}
+
+p{
+    color: var(--links)
+}
+
+.logo{
+    color: var(--buttons)!important;
+    text-decoration: none;
+    font-size: 1.5em!important;
+    font-weight: bold;
+}
+
+.intro{
+    padding: 2em 0;
+}
+
+/* skills */
+.skills{
+    padding: 2em 0;
+}
+
+.skills i{
+    color: var(--buttons);
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:812px){
+    .intro-info h1{
+        font-size: 3em;
+        margin: 10px 0;
+    }
+
+    .intro-info a{
+        margin-top: 1em;
+    }
+}

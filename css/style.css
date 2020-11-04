@@ -30,7 +30,6 @@
 
 
 body{
-
     font-family: 'Catamaran', sans-serif;
     line-height: 1.6;
 }
@@ -39,7 +38,7 @@ p{
     color: var(--links)
 }
 
-.logo a{
+.logo{
     color: var(--buttons);
     text-decoration: none;
 }
@@ -126,11 +125,6 @@ ul{
     margin: 3rem 0 5rem;
 }
 
-/* .section-1 .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-} */
 
 /* .section-1 h1{
     font-size: 3rem;
@@ -374,30 +368,23 @@ i{
     text-align: center;
 }
 
-@media screen and (max-width:800px ){
+@media screen and (max-width:812px ){
     image{
         width: 100%;
     }
-
-    /* nav-links */
-    .nav-links>li{
-        display: none;
+    .intro{
+        margin:0;
     }
-
     /* first section */
-    .section-1{
-        margin: 1rem 0 1rem;
+    .section-1 {
+        padding: 10em 0 4em;
+
     }
     
-    .section-1 .container{
-        display: grid;
-        grid-template-columns:  1fr;
-   
-    }
 
     /* skills */
     .skills{
-        margin: 2rem 0 3rem;
+        /* margin: 2rem 0 3rem; */
     }
     .skills h3{
         text-align: center;

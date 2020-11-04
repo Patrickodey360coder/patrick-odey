@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -11,63 +12,49 @@
     <title>Patrick Odey</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="/">Patrick Odey</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-            </li>
-
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light wow animate__animated animate__bounceInDown fixed-top" data-wow-duration="1s">
+        <div class="container container">
+            <a class="navbar-brand logo" href="/">Patrick Odey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                </li>
+            </ul>
+            </div>
         </div>
-    </div>
     </nav>
 
     <!-- Intro  -->
-    <!-- <section class="section-1">
+    <section class="intro my-3">
         <div class="container">
-            <div class="intro wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h4>Hi,</h4>
-                <h1>I am Patrick Odey</h1>
-                <h3>Fullstack Web Developer</h3>
-                <a href="#contact" class="button" style="text-align: center; text-decoration: none;">Hire me</a>
-            </div>
-            <img src="images/2968383.jpg" alt="header image" class="wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
-        </div>
-    </section> -->
-
-    <!-- Intro  -->
-    <section class="section-1">
-        <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6   intro wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row mt-3 py-5">
+                    <div class="col-md-5 col-sm-12 my-5 wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="intro-info">
                             <h4>Hi,</h4>
                             <h1>I am Patrick Odey</h1>
-                            <h3>Fullstack Web Developer</h3>
+                            <h4>Fullstack Web Developer</h4>
                             <a href="#contact" class="button" style="text-align: center; text-decoration: none;">Hire me</a>
+                        </div>
                     </div>
-                    <div class="col-sm-6 d-none d-sm-block ">
+                    <div class="col-md-7 d-none d-md-block d-sm-none">
                         <img src="images/2968383.jpg" alt="header image" class="img-fluid wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -80,43 +67,44 @@
 
     <!-- Skills -->
     <section id="skills" class="skills wow animate__animated animate__fadeIn"  data-wow-duration="1s" data-wow-delay="1s">
-        <h3 >Skills</h3>
-        <div class="container" style="place-items: center; text-align: center;">
-            <div>
-                <i class="fab fa-html5 fa-2x"></i>
-                <h6>HTML</h6>
-            </div>
+        <div class="container">
+            <h3 class="text-center pb-5">Skills</h3>
+            <div class="row text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fab fa-html5 fa-2x"></i>
+                    <h6>HTML</h6>
+                </div>
 
-            <div>
-                <i class="fab fa-css3-alt fa-2x"></i>
-                <h6>CSS</h6>
-            </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fab fa-css3-alt fa-2x"></i>
+                    <h6>CSS</h6>
+                </div>
 
-            <div>
-                <i class="fab fa-js fa-2x"></i>
-                <h6>JAVASCRIPT</h6>
-            </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fab fa-js fa-2x"></i>
+                    <h6>HTML</h6>
+                </div>
 
-            <div>
-                <i class="fab fa-php fa-2x"></i>
-                <h6>PHP</h6>
-            </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fab fa-php fa-2x"></i>
+                    <h6>PHP</h6>
+                </div>
 
-            <div>
-                <i class="fab fa-laravel fa-2x"></i>
-                <h6>LARAVEL</h6>
-            </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fab fa-laravel fa-2x"></i>
+                    <h6>LARAVEL</h6>
+                </div>
 
-            <div>
-                <i class="fas fa-database fa-2x"></i>
-                <h6>SQL</h6>
+                <div class="col-lg-3 col-sm-6 col-xs-6 py-2">
+                    <i class="fas fa-database fa-2x"></i>
+                    <h6>SQL</h6>
+                </div>
             </div>
-
         </div>
-    </section>
+    </section> 
 
     <!-- About section -->
-    <section id="about" class="about wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+    <!-- <section id="about" class="about wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
         <h3>About</h3>
         <div class="container">
             <img src="images/6659.jpg" alt="cartoon image">
@@ -127,10 +115,10 @@
                 <p>Earlier I was a full-time freelancer and also have been an intern at LiteStack a local tech start-up. Currently, I'm currently open for as a web developer</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- hype with overlay-->
-    <section class="hype" data-wow-duration="1s" data-wow-delay="1s">
+    <!-- <section class="hype" data-wow-duration="1s" data-wow-delay="1s">
         <div class="overlay">
             <div class="hype-inner">
                 <p>I build accessible and scalable products</p>
@@ -139,10 +127,10 @@
                 <input class="button" type="button" value="Get started">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact form  -->
-    <section id="contact" class="contact" >
+    <!-- <section id="contact" class="contact" >
         <div class="container">
 			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
 				<h4 class="heading">Send a message</h4>
@@ -192,17 +180,17 @@
                     </div>
 			</div>
 		</div>
-    </section>
+    </section> -->
     <!-- Footer -->
-    <div class="container">
+    <!-- <div class="container">
         <hr>
-    </div>
+    </div> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
           <p>2020 Patrick Odey. All rights reserved</p>
       </div>  
-    </footer>
+    </footer> -->
   
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
