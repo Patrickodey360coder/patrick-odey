@@ -33,6 +33,10 @@
     margin: 0 auto;
 }
 
+.green{
+    color: var(--buttons)!important;
+}
+
 body{
     font-family: 'Catamaran', sans-serif;
     line-height: 1.6;
