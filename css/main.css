@@ -42,11 +42,34 @@ body{
     line-height: 1.6;
 }
 
+.navbar{
+    background-color: #fff!important;
+}
+
 .logo{
     color: var(--buttons)!important;
     text-decoration: none;
-    font-size: 1.5em!important;
+    font-size: 1.7em!important;
     font-weight: bold;
+}
+
+.navbar li>a{
+    font-size: 1.1em!important;
+}
+
+.navbar li a:hover{
+    color:var(--buttons)!important;
+}
+
+
+
+.nav-colored{ 
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;  
+}
+.nav-transparent{ 
+    border-bottom: none;
 }
 
 .intro{
@@ -84,6 +107,26 @@ body{
     transition: all .2s linear; 
 }
 
+.boxshadow-contact{
+    border-radius: .5rem;
+    padding: 2rem 0rem;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 1rem auto;
+    width: 210px;
+    min-height: 5rem;
+    overflow: hidden;
+    box-shadow: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; 
+}
+
+.boxshadow-contact i{
+    color: var(--buttons);
+}
+
 .hype{
     margin: 5rem 0 3rem;
     position: relative;
@@ -119,6 +162,22 @@ body{
 .card{
     width: 100%!important;
     margin-bottom: 1em;
+}
+
+.social-links a {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #343a40;
+    text-decoration: none;
 }
 
 @media screen and (max-width:812px){

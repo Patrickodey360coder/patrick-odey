@@ -12,8 +12,8 @@
     <title>Patrick Odey</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light wow animate__animated animate__bounceInDown fixed-top" data-wow-duration="1s">
-        <div class="container container">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light wow animate__animated animate__bounceInDown fixed-top" data-wow-duration="1s">
+        <div class="container">
             <a class="navbar-brand logo" href="/"><i class="fas fa-code"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -178,115 +178,89 @@
                         </div>
                       </div>
                 </div>
-
-                <!-- <div class="col-md-6">
-                    <div class="card">
-                        <img src="/images/covistrain.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-danger">preview</a>
-                          <a href="#" class="btn btn-dark">github</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="/images/covistrain.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-danger">preview</a>
-                          <a href="#" class="btn btn-dark">github</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="/images/covistrain.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-danger">preview</a>
-                          <a href="#" class="btn btn-dark">github</a>
-                        </div>
-                      </div>
-                </div> -->
             </div>
         </div>
     </div>
 
     <!-- Contact form  -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact pt-5 pb-2" >
         <div class="container">
             <div class="row">
+                <div class="col-md-6 my-2">
+                    <h4 class="heading">Send a message</h4>
+                    <p>start the conversation</p> 
+                    <form>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                          <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control mb-2" placeholder="Leave a message here" style="max-height: 200px; height: 200px;" id="floatingTextarea"></textarea>
+                          </div>
+                        <button type="submit" class="button">Submit</button>
+                      </form>
+                </div>
+                <div class="col-md-6 my-2">
+                    <h4 class="heading">Get Updates</h4>
+                    <p>find out what I'm upto</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col-6 mb-3">
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="button">Submit</button>
 
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-sm-6 col-xs-6 py-2">
+                                <div class="boxshadow-contact">
+                                    <i class="fas fa-phone fa-2x mb-1"></i>
+                                    <p>+234-903-2369-355</p>
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-sm-6 col-xs-6 py-2">
+                                <div class="boxshadow-contact">
+                                    <i class="fas fa-envelope fa-2x mb-1"></i>
+                                    <p>patrickodey984@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    <!-- <section id="contact" class="contact" >
+    
+    <!-- social links -->
+    <div class="social-links py-2">
         <div class="container">
-			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-				<h4 class="heading">Send a message</h4>
-				<p>start the conversation</p>
-				<form action="" method="post" class="form">
-					<div class="form-row">
-					<input class="form-controler" type="text" placeholder="Your name">
-                    </div>
-                    
-					<div class="form-row">
-					<input class="form-controler" type="text" placeholder="Email address">
-                    </div>
-                    
-					<div class="form-row">
-					<textarea class="" cols="30" rows="10" placeholder="Your message"></textarea>
-                    </div>
-                    
-                    <div class="form-row">
-                        <input type="button" class="button" value="Send">
-                    </div>
-				</form>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="https://twitter.com/patrickodey_" target="_blank"><i class="fab fa-twitter "></i></a>
+                    <a href="https://www.linkedin.com/in/patrick-odey-a5289a184/" target="_blank"><i class="fab fa-linkedin "></i></a>
+                    <a href="https://github.com/Patrickodey360coder/" target="_blank"><i class="fab fa-github "></i></a>
+                </div>
             </div>
-            
-			<div class="wow animate__animated animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-				<h4 class="heading">Get updates</h4>
-                    <p>see what i'm up to</p>
-                    <form action="" class="form-2">
-                        <div class="form-row">
-                            <input class="form-controler" type="text" placeholder="Your name">
-                            <input class="form-controler" type="email" placeholder="Email">
-                            <input class="button" type="button" value="Get updates">
-                        </div>
-                    </form>
-                    <div class="phone-mail">
-                        <div class="box">
-                            <div class="circle">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <p>+234 - 903 - 2369 - 355</p>
-                        </div>
-                        <div class="box">
-                            <div class="circle">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <p>patrickodey984@gmail.com</p>
-                        </div>
-                    </div>
-			</div>
-		</div>
-    </section> -->
-    <!-- Footer -->
-    <!-- <div class="container">
-        <hr>
-    </div> -->
+        </div>
+    </div>
 
-    <!-- <footer class="footer">
+    <div class="container">
+        <hr class="my-2">
+    </div>
+
+    <!-- copyrights -->
+    <footer class="footer">
       <div class="container">
-          <p>2020 Patrick Odey. All rights reserved</p>
+          <p class="text-center">© 2020 Patrick Odey. All rights reserved</p>
       </div>  
-    </footer> -->
+    </footer>
   
     <script src="typed.js"></script>
     <script src="script.js"></script>
