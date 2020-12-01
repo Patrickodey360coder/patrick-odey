@@ -109,26 +109,15 @@ body{
 }
 
 .boxshadow-contact{
-    /* border-radius: .5rem;
-    padding:;
-    background-color: #fff;
-    font-weight: 400;
-
-    margin: 1rem 0;
-    width: 200px;
-    min-height: 6rem;
-    overflow: hidden;
-    box-shadow: none;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-  */
     height:150px;
     width: 200px;
     font-size: .9rem;
+    margin: 1rem 0;
+    overflow: hidden;
     position: relative;
     border: 1px solid var(--buttons);
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
-
 }
 
 .contact-info {
@@ -203,5 +192,17 @@ body{
 
     .intro-info a{
         margin-top: 1em;
+    }
+
+    .boxshadow-contact{
+        height:150px;
+        width: 200px;
+        font-size: .9rem;
+        margin: 1rem auto;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid var(--buttons);
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
     }
 }
