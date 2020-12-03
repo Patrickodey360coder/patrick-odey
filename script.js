@@ -15,8 +15,7 @@ window.onload = (e)=> {
   let typed = new Typed('.type', {
     strings: ['I write scalable and responsible website and applications',
               'My communication skills are pretty amazing',
-              'I enjoy skateboarding',
-              "I watch comedy when I'm not coding"
+              'I am open to learning new technologies'
             ],
     typeSpeed: 30,
     backSpeed: 30,
