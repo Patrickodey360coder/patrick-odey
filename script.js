@@ -50,8 +50,6 @@ form.addEventListener('submit', function(e){
       icon: "success",
       button: "Aww yass!",
     });
-    document.getElementById('email').value=null;
-    document.getElementById('message').value=null;
   }
   else {
     swal({
@@ -62,4 +60,3 @@ form.addEventListener('submit', function(e){
     });
   }
 });
-
