@@ -96,13 +96,6 @@
 
                 <div class="col-lg-3 col-sm-4 col-xs-6 py-2">
                     <div class="boxshadow">
-                        <i class="fab fa-react fa-2x"></i>
-                        <h6>REACT</h6>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-4 col-xs-6 py-2">
-                    <div class="boxshadow">
                         <i class="fab fa-php fa-2x"></i>
                         <h6>PHP</h6>
                     </div>
@@ -110,8 +103,8 @@
 
                 <div class="col-lg-3 col-sm-4 col-xs-6 py-2">
                     <div class="boxshadow">
-                        <i class="fab fa-node fa-2x"></i>
-                        <h6>NODE</h6>
+                        <i class="fab fa-laravel fa-2x"></i>
+                        <h6>Laravel</h6>
                     </div>
                 </div>
 
@@ -135,9 +128,9 @@
                 </div>
                 <div class="col-md-6 py-3 px-lg-2 wow animate__animated animate__bounceInRight" data-wow-duration="1s" data-wow-delay="2s">
                     <h5 class="mb-2 mt-lg-2 ">Who is this guy?</h5>
-                    <p>I'm a web developer with over 2 years of professional experience. I am interested in all kind of visual communication but my major focus is on creating mobile, tablet and desktop interfaces. I also have skills in other fields like computer hardwares, hardware troubleshooting, skateboarding and gaming.</p><br>
+                    <p>I'm a web developer with 2 years of professional experience. I am interested in all kind of visual communication but my major focus is on creating mobile, tablet and desktop interfaces. I also have skills in other fields like computer hardwares, hardware troubleshooting, skateboarding and gaming.</p><br>
     
-                    <p>Earlier I was a full-time freelancer and also have been an intern at LiteStack a local tech start-up. Currently, I'm currently open for as a web developer</p>
+                    <p>Earlier I was a full-time freelancer and also have been an intern at LiteStack a local tech start-up and a HNG internship finalist. Currently, I'm currently open for roles/freelance jobs as a web developer</p>
                 </div>
             </div>
         </div>
@@ -150,7 +143,7 @@
             <div class="hype-inner text-center">
                 <p> Want to bring your tech ideas to life? </p>
                 <h3>Say hello, lets create something great</h3>
-                <input class="button" type="button" value="Get started">
+                <a class="button" href="#contact" style="text-decoration: none;">Get started</a>
             </div>
         </div>
     </section>
@@ -165,9 +158,9 @@
                         <img src="/images/covistrain.jpg" class="card-img-top" alt="covitrace">
                         <div class="card-body">
                           <h5 class="card-title">Cov19Strain</h5>
-                          <p class="card-text">This is an application that tracks COVID-19 using live data from WHO</p>
-                          <a href="https://mrrobot-covidtracer.netlify.app/" target="_blank" class="btn btn-danger">preview</a>
-                          <a href="https://github.com/Patrickodey360coder/COVID-19-TRACKER" target="_blank" class="btn btn-dark">github</a>
+                          <p class="card-text">This is an application that tracks COVID-19 using WHO's live API</p>
+                          <a href="https://mrrobot-covidtracer.netlify.app/" target="_blank" class="btn border text-danger">preview</a>
+                          <a href="https://github.com/Patrickodey360coder/COVID-19-TRACKER" target="_blank" class="btn border text-danger">github</a>
                         </div>
                       </div>
                 </div>
@@ -178,7 +171,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Metro Care</h5>
                           <p class="card-text">An NDIS service in Australia. This was built with Laravel</p>
-                          <a href="http://metrocareservices.com.au/" target="_blank" class="btn btn-danger">preview</a>
+                          <a href="http://metrocareservices.com.au/" target="_blank" class="btn border text-danger">preview</a>
                         </div>
                       </div>
                 </div>
@@ -189,7 +182,7 @@
                         <div class="card-body">
                           <h5 class="card-title">LiteStack</h5>
                           <p class="card-text">A fast growing tech start-up. This was built with Laravel</p>
-                          <a href="https://litestack.com.ng/" target="_blank" class="btn btn-danger">preview</a>
+                          <a href="https://litestack.com.ng/" target="_blank" class="btn border text-danger">preview</a>
                         </div>
                       </div>
                 </div>
@@ -204,36 +197,28 @@
                 <div class="col-md-6 my-2">
                     <h4 class="heading">Send a message</h4>
                     <p>start the conversation</p> 
-                    <form>
+                    <form id="form" class="needs-validation" novalidate>
                         <div class="mb-3">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email address" required>
+                          <div class="invalid-feedback">
+                            This field cannot be blank
+                          </div>
                           <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control mb-2" placeholder="Leave a message here" style="max-height: 200px; height: 200px;" id="floatingTextarea"></textarea>
+                            <textarea class="form-control mb-2" placeholder="Leave a message here" style="max-height: 200px; height: 200px;" id="message" required></textarea>
+                            <div class="invalid-feedback">
+                                This field cannot be blank
+                              </div>
                           </div>
-                        <button type="submit" class="button">Submit</button>
+                        <button type="submit" class="button" id="submit">Submit</button>
                       </form>
                 </div>
                 <div class="col-md-6 my-2">
-                    <h4 class="heading">Get Updates</h4>
+                    <h4 class="heading">Call or Text</h4>
                     <p>find out what I'm upto</p>
-                    <form>
-                        <div class="row">
-                            <div class="col-6">
-                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col-6 mb-3">
-                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
-                            <div class="col">
-                                <button type="submit" class="button">Submit</button>
-
-                            </div>
-                        </div>
-                    </form>
                     <div class="row text-center my-2 mx-auto">
-                        <div class="col-lg-5 col-md-12 col-sm-6 mx-auto my-2">
+                        <div class="col-lg-5 col-md-12 col-sm-6 my-2">
                             <div class="boxshadow-contact rounded">
                                 <div class="contact-info">
                                     <i class="fas fa-phone fa-2x mb-1"></i>
@@ -242,7 +227,7 @@
                             </div>
                         </div>
         
-                        <div class="col-lg-5 col-md-12 col-sm-6 mx-auto my-2">
+                        <div class="col-lg-5 col-md-12 col-sm-6 my-2">
                             <div class="boxshadow-contact rounded">
                                 <div class="contact-info">
                                     <i class="fas fa-envelope fa-2x mb-1"></i>
@@ -276,13 +261,14 @@
     <!-- copyrights -->
     <footer class="footer">
       <div class="container">
-          <p class="text-center">© 2020 Patrick Odey. All rights reserved</p>
+          <p class="text-center">© 2021 Patrick Odey. All rights reserved</p>
       </div>  
     </footer>
   
     <script src="typed.js"></script>
     <script src="script.js"></script>
-
+    <script src="validate.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <script>new WOW().init();</script>

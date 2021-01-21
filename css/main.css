@@ -27,7 +27,9 @@
     cursor: pointer;
     border: 0.5px solid var(--buttons);
 }
-
+p{
+    color: var(--links);
+}
 /* centered columns */
 .col-centered {
     margin: 0 auto;
