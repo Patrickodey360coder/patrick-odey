@@ -13,7 +13,7 @@ window.onload = (e)=> {
   };
 
   let typed = new Typed('.type', {
-    strings: ['I write scalable and responsible websites and applications',
+    strings: ['I write scalable and responsive websites and web applications',
               'My communication skills are pretty amazing',
               'I am open to learning new technologies'
             ],
@@ -22,20 +22,6 @@ window.onload = (e)=> {
     loop:      true 
   });
 }
-
-// let submit = document.getElementById('submit');
-// let email  = document.getElementById('email').value;
-// let message = document.getElementById('message').value;
-// submit.addEventListener('click', (evt)=>{
-//     evt.preventDefault();
-//   swal({
-//     title: "Thanks!",
-//     text: "You message has been sent!",
-//     icon: "success",
-//     button: "Aww yass!",
-//   });
-// });
-
 
 
 let form = document.getElementById('form');
