@@ -13,9 +13,10 @@ window.onload = (e)=> {
   };
 
   let typed = new Typed('.type', {
-    strings: ['I write scalable and responsive websites and web applications',
-              'My communication skills are pretty amazing',
-              'I am open to learning new technologies'
+    strings: ['I write scalable and mobile responsive websites and web applications...',
+              'My communication skills are pretty amazing...',
+              'I am open to learning new technologies...',
+              'I love sharing knowledge...'
             ],
     typeSpeed: 30,
     backSpeed: 30,
@@ -46,3 +47,13 @@ form.addEventListener('submit', function(e){
     });
   }
 });
+
+const coder = document.getElementById('coder');
+const animItem = bodymovin.loadAnimation({
+  wrapper: coder,
+  animType: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://assets6.lottiefiles.com/packages/lf20_iorpbol0.json'
+})
+

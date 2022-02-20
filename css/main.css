@@ -2,7 +2,9 @@
 :root {
     --paragraphs:#222222;
     --links:#666666;
-    --buttons: #37A000;
+    /* --buttons: #37A000; */
+    --buttons: #0076CC;
+    /* --main: #3EA9F5; */
     --overlay: rgba(0,0,0,0.7);
 }
 
@@ -78,6 +80,11 @@ body {
 .intro {
     padding: 2em 0;
     overflow: hidden;
+}
+
+.lottie {
+    height: 500px;
+    width: 100%;
 }
 
 /* skills */
@@ -188,6 +195,18 @@ body {
     justify-content: center;
     color: #343a40;
     text-decoration: none;
+}
+
+.me {
+    padding-top: 4em;
+}
+
+#projects a {
+    color: #4c96ca!important;
+}
+
+a:hover {
+    color: #6da3da!important;
 }
 
 @media screen and (max-width:812px) {
